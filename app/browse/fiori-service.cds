@@ -37,11 +37,11 @@ annotate CatalogService.Books with {
     });
 };
 
-annotate CatalogService.Books with {
+annotate CatalogService.Books with @(Capabilities: {FilterRestrictions: {FilterExpressionRestrictions: [{
+    Property          : 'date',
+    AllowedExpressions: 'SingleRange'
+}]}});
 
-    @Consumption.filter: {selectionType: #INTERVAL}
-    date;
-}
 
 /* annotate CatalogService.Attribute with {
     ID @(Common: {

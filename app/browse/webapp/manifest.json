@@ -111,6 +111,25 @@
                     "route": "BooksDetails"
                   }
                 }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.SelectionFields": {
+                  "filterFields": {
+                    "date": {
+                      "settings": {
+                        "defaultValues": [
+                          {
+                            "operator": "TODAYFROMTO",
+                            "values": [
+                              0,
+                              5
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
               }
             }
           }
