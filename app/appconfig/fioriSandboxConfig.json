@@ -19,6 +19,14 @@
                     "title": "Browse Books",
                     "targetURL": "#Books-display"
                   }
+                },
+                {
+                  "id": "BrowseBooksV2",
+                  "tileType": "sap.ushell.ui.tile.StaticTile",
+                  "properties": {
+                    "title": "Browse Books V2",
+                    "targetURL": "#Booksv2-display"
+                  }
                 }
               ]
             },
@@ -71,6 +79,27 @@
                 "applicationType": "SAPUI5",
                 "additionalInformation": "SAPUI5.Component=bookshop",
                 "url": "browse/webapp"
+              }
+            },
+            "BrowseBooksV2": {
+              "semanticObject": "Booksv2",
+              "action": "display",
+              "title": "Browse Books V2",
+              "signature": {
+                "parameters": {
+                  "Books.ID": {
+                    "renameTo": "ID"
+                  },
+                  "Authors.books.ID": {
+                    "renameTo": "ID"
+                  }
+                },
+                "additionalParameters": "ignored"
+              },
+              "resolutionResult": {
+                "applicationType": "SAPUI5",
+                "additionalInformation": "SAPUI5.Component=browsev2",
+                "url": "browsev2/webapp"
               }
             },
             "ManageBooks": {
